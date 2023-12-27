@@ -105,7 +105,7 @@ class MotPage extends StatelessWidget {
           ),
           TeamMemberCard(
             name: 'Firmansyah Sutan Wahyu Prakosa',
-            imageUrl: 'assets/images/stewie.png',
+            imageUrl: 'https://i.ibb.co/H7ZCrnZ/20230608-184038.jpg',
             numbers: '3337210030',
             words: 'Mobile Front-End Developer',
             facebookLink: 'https://www.facebook.com/firmansyahswp',
@@ -133,6 +133,16 @@ class MotPage extends StatelessWidget {
             instagramLink: 'https://www.instagram.com/johndoe',
             emailLink: 'mailto:ageng1511@gmail.com',
             whatsappLink: 'https://wa.me/6287882847883',
+          ),
+          TeamMemberCard(
+            name: 'Mochammad ahnaf Hilmi Zahran',
+            imageUrl: 'https://i.ibb.co/bgt18D8/ahnaf.jpg',
+            numbers: '3337210020',
+            words: 'Mobile Front-End Developer',
+            facebookLink: 'https://www.facebook.com/',
+            instagramLink: 'https://www.instagram.com/',
+            emailLink: 'mailto:mochahnaf204@gmail.com',
+            whatsappLink: 'https://wa.me/62821233379997',
           ),
 
           // Tambahkan kartu untuk anggota tim lainnya di sini...
