@@ -6,6 +6,8 @@ import 'mot.dart'; // Import file meet_our_team.dart
 class HomePage extends StatelessWidget {
   final String ifchatLogoUrl = 'assets/images/logo.png';
 
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
