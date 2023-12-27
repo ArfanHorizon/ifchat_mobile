@@ -50,7 +50,7 @@ class _ChatPageState extends State<ChatPage> {
   void sendMessage() async {
     String messageText = _textEditingController.text.trim();
     String senderName =
-        'YourSenderName'; // You need to replace this with the actual sender's name
+        'anonymous'; // You need to replace this with the actual sender's name
 
     if (messageText.isNotEmpty) {
       try {
@@ -98,7 +98,7 @@ class _ChatPageState extends State<ChatPage> {
             SizedBox(width: 10.0),
             Text(
               'Chat Page',
-              style: TextStyle(fontSize: 18.0),
+              style: TextStyle(fontSize: 18.0, color: Colors.white),
             ),
           ],
         ),

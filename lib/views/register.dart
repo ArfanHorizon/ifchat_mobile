@@ -57,6 +57,7 @@ class RegisterPage extends StatelessWidget {
                 margin: EdgeInsets.only(bottom: 10.0),
                 child: TextFormField(
                   controller: usr,
+                  style: TextStyle(color: Color(0xFF36393F)),
                   decoration: InputDecoration(
                     labelText: 'Name',
                     fillColor: Colors.white,
@@ -73,12 +74,14 @@ class RegisterPage extends StatelessWidget {
                     fillColor: Colors.white,
                     filled: true,
                   ),
+                  style: TextStyle(color: Color(0xFF36393F)),
                 ),
               ),
               // Input field for password
               Container(
                 margin: EdgeInsets.only(bottom: 10.0),
                 child: TextFormField(
+                  style: TextStyle(color: Color(0xFF36393F)),
                   obscureText: true,
                   controller: pwd,
                   decoration: InputDecoration(

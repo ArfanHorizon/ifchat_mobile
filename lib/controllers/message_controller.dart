@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:ifchat/controllers/function.dart';
 import 'package:ifchat/models/message.dart';
-import 'package:ifchat/views/chat.dart';
 
 class MessageController {
   Future<List<Product>> getMessages() async {
@@ -37,23 +36,23 @@ class MessageController {
       showLoadingIndicator(context, 'Adding product...');
       final response = await http.post(
         Uri.parse('$url/messages'),
-        body: jsonEncode({
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=UTF-8',
+        },
+        body: jsonEncode(<String, String>{
           'name': name,
           'text': text,
         }),
-        headers: <String, String>{
-          'Content-type': 'application/json; charset=UTF-8',
-        },
       );
 
-      if (response.statusCode == 200) {
+      if (response.statusCode == 201) {
         // Product added successfully
         // You can handle successful response here if needed
       } else {
         // Adding product failed
         print(
             'Failed to add product. Server responded with status ${response.statusCode}');
-        print('Response body: ${response.body}');
+        // print('Response body: ${response.body}');
         throw Exception('Failed to add product');
       }
 
